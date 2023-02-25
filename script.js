@@ -1,7 +1,6 @@
 const currentUrl = window.location.href
 const urlParams = new URLSearchParams(window.location.search)
 const options = { // Setup all possible actions and specify require arguments
-	followPlayerIntoGame: ['followUserId'],
 	editGameInStudio: ['editPlaceId'],
 	joinGameInstance: [{param: 'placeId', regex: /\/games\/(\d+)/}, 'gameId'],
 	joinPrivateGame: [{param: 'privatePlaceId', regex: /\/games\/(\d+)/}, ['privateId'], ['code']],
